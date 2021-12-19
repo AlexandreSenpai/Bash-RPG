@@ -1,15 +1,16 @@
 from typing import Any
 
-class Orc():
+class Monster():
   
-  _atk_damage = 10
   _dodge_chance = 0.1
 
   def __init__(self, 
                name: str, 
-               xp_reward: int, 
+               xp_reward: int,
+               atk_damage: int, 
                health: int=100):
     self.name = name
+    self._atk_damage = atk_damage
     self._health = health
     self._xp_reward = xp_reward
 

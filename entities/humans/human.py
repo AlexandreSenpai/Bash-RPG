@@ -24,7 +24,7 @@ class Human:
   
   def attack(self, enemy: Any) -> None:
     print(f'{self.name} has attacked {enemy.name}')
-    enemy.take_damage = self.atk_damage
+    enemy.take_damage = self._atk_damage
   
   def run(self) -> None:
     print(f'{self.name} started to run.')
